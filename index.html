@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Mitrais - Simple Registrastion App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./css/sticky-footer.css">
+    
+    <!-- Sticky Footer  -->
+    <link rel="stylesheet" href="./css/sticky-footer.css">
+    
+    <!-- Custom css for this page -->
+    <link rel="stylesheet" href="./css/custom.css">
+    
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main role="main">
+        <div class="container">
+            <div class="card shadow mt-4">
+                <div class="card-header">
+                    <div id="formError"></div>
+                    <h3 class="text-purple">Registration</h3>
+                </div>
+                <div class="card-body">
+                    <form id="registrationForm" novalidate>
+                        <div class="form-group">
+                            <label for="mobileNumber" class="text-purple">Mobile Number <strong class="text-danger">*</strong></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><strong>+62</strong></div>
+                                </div>
+                                <input type="text" maxlength="13" class="form-control" id="mobileNumber" name="mobileNumber" placeholder="Your mobile phone number" value="82112433414">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName" class="text-purple">First Name <strong class="text-danger">*</strong></label>
+                            <input class="form-control" name="firstName" id="firstName" placeholder="Your first name" value="Anggie">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="text-purple">Last Name <strong class="text-danger">*</strong></label>
+                            <input class="form-control" name="lastName" id="lastName" placeholder="Your last name" value="Gunawan">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="text-purple">Date of Birth</label>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <select class="form-control" name="dobDate" id="dobDate"></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <select class="form-control" name="dobMonth" id="dobMonth"></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <select class="form-control" name="dobYear" id="dobYear"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="text-purple">Gender</label> <br/>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="gender1" value="1">
+                                <label class="form-check-label" for="gender1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="gender2" value="2">
+                                <label class="form-check-label" for="gender2">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-purple">Email <strong class="text-danger">*</strong></label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your email address" value="anggie.gunawan@email.com">
+                        </div>
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-block bg-purple">
+                                Register
+                            </button>
+                        </div>
+                    </form> 
+                    <div id="loginButtonContainer" class="d-none">
+                        <a class="btn btn-block bg-purple" href="login.html">To Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-purple">
+        <div class="container">
+            <p class="text-center">
+                <small>2020 - Anggie Gunawan for <strong> <a class="text-light" href="http://mitrais.com">Mitrais</a></strong></p></small>
+            </p>
+        </div>
+    </footer>
+    <script src="./js/jQuery-3.5.1.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

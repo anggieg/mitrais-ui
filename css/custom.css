@@ -1,0 +1,18 @@
+.text-purple { 
+    color: #6200C0;
+}
+
+.bg-purple { 
+    color: white;
+    background-color: #6200C0;
+}
+
+.bg-purple.btn:hover { 
+    color: white;
+    background-color: #7158e2;
+}
+
+.form-control:focus {
+    border-color: #7158e2;
+    box-shadow: 0 0 0 0.2rem rgba(98, 0, 192, 0.25); */
+} 
