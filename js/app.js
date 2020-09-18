@@ -1,4 +1,5 @@
 // main function
+const API_PORT=3099;
 jQuery(function(){
 
     // initialFormState
@@ -44,7 +45,7 @@ jQuery(function(){
 
         // ajax request to backend
         $.ajax({
-            url: 'http://localhost:3000/api/auth/register',
+            url: `http://localhost:${API_PORT}/api/auth/register`,
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(parsedData),
@@ -70,7 +71,8 @@ jQuery(function(){
             },
             error: function(error){
                 // if error occurred then show error message and enable form input
-                showFormError(JSON.parse(error.responseText)['message']);
+                console.log(error);
+                // showFormError(JSON.parse(error.responseText)['message']);
                 enableForm(true);
             }
         })
